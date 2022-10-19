@@ -1,7 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import { logo, logo1, sky } from "../images";
 
+const radio_button = [
+  { id: 1, name: "I'm Not an Agent" },
+  { id: 2, name: "I'm an Agent" },
+]
+
 const Header = () => {
+  const [selected, setSelected] = useState();
+
+   
   return (
     <header className="flex flex-col sm:flex-row mb-10">
       <div className="bg-[#ECECEC] p-8 sm:w-1/2">
@@ -50,15 +58,12 @@ const Header = () => {
               Agent
             </label>
             <aside>
-              <div>
-                <input className="input mr-2" type="radio" name="" id="" />
-                I'm Not an Agent
-              </div>
-
-              <div>
-                <input className="input  mr-2" type="radio" name="" id="" />
-                I'm an Agent
-              </div>
+              {radio_button.map((radio, i) => (
+                <div key={i}>
+                  <input className="input mr-2" onChange={() => setSelected(radio.id)} type="radio" name="" id="" checked={radio.id === selected ? true : false}/>
+                  {radio.name}
+                </div>
+              ))}
             </aside>
           </div>
           <div className="my-2">
