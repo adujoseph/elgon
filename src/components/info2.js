@@ -66,7 +66,7 @@ const Info2 = () => {
 
     ]
   return (
-    <div className="p-10 bg-[#ECECEC]">
+    <div className="p-10 bg-[#ECECEC] lg:p-32">
       <h3 className="text-2xl font-bold">State of the art amenities.</h3>
       <div className="my-10  grid sm:grid-cols-2">
         {dummy.map((data) => (

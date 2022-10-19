@@ -10,7 +10,7 @@ const Header = () => {
           className="h-7 lg:h-10 p-1 w-full object-contain"
           alt=""
         />
-        <form className="lg:mx-20 mt-7 bg-white rounded-lg p-8">
+        <form className="lg:mx-10 mt-7 bg-white rounded-lg p-8">
           <h4 className="text-lg sm:text-xl font-bold text-center">
             EMBLEM x Furnishings by Louis Vuitton.
           </h4>
@@ -82,8 +82,8 @@ const Header = () => {
         <div className="absolute right-0 px-5">
           <img src={logo} alt="" className="h-7 object-contain w-full" />
         </div>
-        <div className="mt-20 lg:mt-0 lg:absolute lg:top-28 lg:right-40 lg:z-20 lg:-ml-10 ">
-          <img src={sky} alt="" className="w-full" />
+        <div className="mt-20 lg:mt-0 lg:absolute lg:top-28 lg:right-40 lg:z-20 lg:-ml-10 2xl:mr-40 2xl:right-20 2xl:top-10">
+          <img src={sky} alt="" className="w-full 2xl:w-[90%]" />
         </div>
       </div>
     </header>

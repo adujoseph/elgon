@@ -5,13 +5,13 @@ const BigCard = () => {
   return (
     <div className="flex flex-col items-center p-8 bg-black space-y-10">
       <section>
-        <img src={gym} alt="" />
+        <img src={gym}  className='w-full' alt="" />
       </section>
-      <section className=" flex space-y-5 items-center flex-col lg:space-x-3 lg:flex-row">
+      <section className=" flex space-y-5 items-center flex-col lg:space-x-3 lg:flex-row 2xl:max-w-7xl mx-auto">
         <div className="lg:w-1/2 ">
-          <img src={house} alt="" />
+          <img src={house} className='' alt="" />
         </div>
-        <div className=" h-max sm:h-[343px] p-10 lg:w-1/2 bg-white rounded-lg">
+        <div className=" h-max sm:h-[343px] p-10 lg:w-1/2 bg-white rounded-lg ">
           <h3 className="text-lg  sm:text-2xl mb-7 font-bold">
             The Perfect Transit Hub
           </h3>
